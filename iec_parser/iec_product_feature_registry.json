@@ -1,0 +1,2233 @@
+{
+  "schema_version": "1.0",
+  "features": [
+    {
+      "key": "product_type",
+      "category": "identity",
+      "data_type": "STRING",
+      "description": "Canonical product feature indicating product type.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "product type"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "product_subtype",
+      "category": "identity",
+      "data_type": "STRING",
+      "description": "Canonical product feature indicating product subtype.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "product subtype"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "product_family",
+      "category": "identity",
+      "data_type": "STRING",
+      "description": "Canonical product feature indicating product family.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "product family"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "intended_use",
+      "category": "identity",
+      "data_type": "STRING",
+      "description": "Canonical product feature indicating intended use.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "intended use"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "rated_voltage",
+      "category": "electrical",
+      "data_type": "MEASUREMENT",
+      "description": "Canonical product feature indicating rated voltage.",
+      "allowed_values": [],
+      "unit": "V",
+      "aliases": [
+        "rated voltage",
+        "rated voltages",
+        "voltage rating",
+        "supply voltage",
+        "voltage setting"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "rated_voltage_min",
+      "category": "electrical",
+      "data_type": "MEASUREMENT",
+      "description": "Canonical product feature indicating rated voltage min.",
+      "allowed_values": [],
+      "unit": "V",
+      "aliases": [
+        "minimum rated voltage",
+        "minimum voltage"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "rated_capacity",
+      "category": "electrical",
+      "data_type": "MEASUREMENT",
+      "description": "Canonical product feature indicating declared rated capacity.",
+      "allowed_values": [],
+      "unit": "Ah",
+      "aliases": [
+        "rated capacity",
+        "capacity rating",
+        "ampere-hour capacity",
+        "amp hour capacity"
+      ],
+      "applicability_relevant": false,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": "Multiple observations may represent declared configurations and are not inherently conflicting."
+    },
+    {
+      "key": "rated_voltage_max",
+      "category": "electrical",
+      "data_type": "MEASUREMENT",
+      "description": "Canonical product feature indicating rated voltage max.",
+      "allowed_values": [],
+      "unit": "V",
+      "aliases": [
+        "maximum rated voltage",
+        "maximum voltage"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "rated_frequency",
+      "category": "electrical",
+      "data_type": "MEASUREMENT",
+      "description": "Canonical product feature indicating rated frequency.",
+      "allowed_values": [],
+      "unit": "Hz",
+      "aliases": [
+        "rated frequency",
+        "supply frequency",
+        "frequency"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "rated_power_input",
+      "category": "electrical",
+      "data_type": "MEASUREMENT",
+      "description": "Canonical product feature indicating rated power input.",
+      "allowed_values": [],
+      "unit": "W",
+      "aliases": [
+        "rated power input",
+        "rated power",
+        "power input"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "rated_current",
+      "category": "electrical",
+      "data_type": "MEASUREMENT",
+      "description": "Canonical product feature indicating rated current.",
+      "allowed_values": [],
+      "unit": "A",
+      "aliases": [
+        "rated current",
+        "current rating"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "number_of_phases",
+      "category": "electrical",
+      "data_type": "INTEGER",
+      "description": "Canonical product feature indicating number of phases.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "number of phases"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "supply_type",
+      "category": "electrical",
+      "data_type": "ENUM",
+      "description": "Canonical product feature indicating supply type.",
+      "allowed_values": [
+        "AC",
+        "DC",
+        "AC_DC",
+        "BATTERY",
+        "OTHER"
+      ],
+      "unit": null,
+      "aliases": [
+        "supply type"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "protection_class",
+      "category": "electrical",
+      "data_type": "ENUM",
+      "description": "Canonical product feature indicating protection class.",
+      "allowed_values": [
+        "CLASS_0",
+        "CLASS_0I",
+        "CLASS_I",
+        "CLASS_II",
+        "CLASS_III"
+      ],
+      "unit": null,
+      "aliases": [
+        "protection class",
+        "class of appliance",
+        "appliance class",
+        "class 0",
+        "class 0i",
+        "class i",
+        "class ii",
+        "class iii",
+        "class ii construction",
+        "class ii constructions",
+        "class iii construction",
+        "class iii constructions"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "ip_rating",
+      "category": "electrical",
+      "data_type": "STRING",
+      "description": "Canonical product feature indicating ip rating.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "ip rating",
+        "IP system",
+        "IP numeral",
+        "first IP numeral",
+        "first numeral of the IP code"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "installation_type",
+      "category": "installation",
+      "data_type": "ENUM",
+      "description": "Canonical product feature indicating installation type.",
+      "allowed_values": [
+        "PORTABLE",
+        "STATIONARY",
+        "FIXED",
+        "BUILT_IN",
+        "FREESTANDING",
+        "WALL_MOUNTED",
+        "CEILING_MOUNTED",
+        "OTHER"
+      ],
+      "unit": null,
+      "aliases": [
+        "installation type",
+        "stationary appliance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_stationary",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is stationary.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "stationary",
+        "stationary appliance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_portable",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is portable.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "portable",
+        "portable appliance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_fixed",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is fixed.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "fixed appliance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_built_in",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is built in.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "built-in appliance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_floor_appliance",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is floor appliance.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is floor appliance",
+        "floor appliance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_table_appliance",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is table appliance.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is table appliance",
+        "table appliance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_wall_mounted",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is wall mounted.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is wall mounted",
+        "wall mounted"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_ceiling_mounted",
+      "category": "installation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is ceiling mounted.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is ceiling mounted",
+        "ceiling mounted"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_supply_cord",
+      "category": "supply_connection",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has supply cord.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "supply cord",
+        "supply cords",
+        "power supply cord"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "attachment_type",
+      "category": "supply_connection",
+      "data_type": "ENUM",
+      "description": "Canonical product feature indicating attachment type.",
+      "allowed_values": [
+        "TYPE_X",
+        "TYPE_Y",
+        "TYPE_Z",
+        "FIXED_WIRING",
+        "APPLIANCE_INLET",
+        "OTHER"
+      ],
+      "unit": null,
+      "aliases": [
+        "attachment type",
+        "type x attachment",
+        "type y attachment",
+        "type z attachment"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_plug",
+      "category": "supply_connection",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has plug.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has plug",
+        "plug"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_appliance_inlet",
+      "category": "supply_connection",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has appliance inlet.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has appliance inlet",
+        "appliance inlet"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_permanently_connected",
+      "category": "supply_connection",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is permanently connected.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is permanently connected",
+        "permanently connected"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_fixed_wiring_connection",
+      "category": "supply_connection",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has fixed wiring connection.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has fixed wiring connection",
+        "fixed wiring connection",
+        "fixed wiring"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_cord_anchorage",
+      "category": "supply_connection",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has cord anchorage.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has cord anchorage",
+        "cord anchorage"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_protective_earthing",
+      "category": "earthing",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has protective earthing.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "protective earthing",
+        "protective earth"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_earthing_terminal",
+      "category": "earthing",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has earthing terminal.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "earthing terminal",
+        "earth terminal"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_earthing_conductor",
+      "category": "earthing",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has earthing conductor.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "earthing conductor",
+        "earth conductor"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_accessible_metal_parts",
+      "category": "earthing",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has accessible metal parts.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has accessible metal parts",
+        "accessible metal parts"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_motor",
+      "category": "motor",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has motor.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "motor",
+        "motors"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "motor_count",
+      "category": "motor",
+      "data_type": "INTEGER",
+      "description": "Canonical product feature indicating motor count.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "motor count"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "motor_type",
+      "category": "motor",
+      "data_type": "ENUM",
+      "description": "Canonical product feature indicating motor type.",
+      "allowed_values": [
+        "SERIES",
+        "INDUCTION",
+        "UNIVERSAL",
+        "SYNCHRONOUS",
+        "DC",
+        "OTHER",
+        "UNKNOWN"
+      ],
+      "unit": null,
+      "aliases": [
+        "motor type"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_series_motor",
+      "category": "motor",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is series motor.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "series motor",
+        "series motors"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_motor_capacitor",
+      "category": "motor",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has motor capacitor.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has motor capacitor",
+        "motor capacitor"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_motor_thermal_protection",
+      "category": "motor",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has motor thermal protection.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has motor thermal protection",
+        "motor thermal protection"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_heating_element",
+      "category": "heating",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has heating element.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "heating element",
+        "heating elements"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_ptc_heating_element",
+      "category": "heating",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has ptc heating element.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "ptc heating element",
+        "positive temperature coefficient heating element"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_tubular_heating_element",
+      "category": "heating",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has tubular heating element.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has tubular heating element",
+        "tubular heating element"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_thermostat",
+      "category": "heating",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has thermostat.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has thermostat",
+        "thermostat"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_thermal_cutout",
+      "category": "heating",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has thermal cutout.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "thermal cut-out",
+        "thermal cutout"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_temperature_limiter",
+      "category": "heating",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has temperature limiter.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "temperature limiter"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_temperature_control",
+      "category": "heating",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has temperature control.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has temperature control",
+        "temperature control"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_programmer",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has programmer.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "programmer",
+        "programme controller"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_timer",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has timer.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "timer",
+        "time switch"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_electronic_control",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has electronic control.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has electronic control",
+        "electronic control",
+        "electronic circuit",
+        "electronic circuits"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_protective_electronic_circuit",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has protective electronic circuit.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "protective electronic circuit",
+        "protective electronic circuits"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_remote_control",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has remote control.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "remote control",
+        "remote operation"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_voltage_selector",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has voltage selector.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has voltage selector",
+        "voltage selector"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_contactor",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has contactor.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has contactor",
+        "contactor",
+        "contactors"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_relay",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has relay.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has relay",
+        "relay",
+        "relays"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_switch",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has switch.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has switch",
+        "switch",
+        "switches"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_off_position",
+      "category": "control",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has off position.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has off position",
+        "off position"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "uses_water",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating uses water.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "uses water",
+        "water"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_water_inlet",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has water inlet.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has water inlet",
+        "water inlet"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_hot_water_connection",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has hot water connection.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "hot water connection",
+        "hot water supply"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_cold_water_connection",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has cold water connection.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "cold water connection",
+        "cold water supply"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_connected_to_water_mains",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is connected to water mains.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "water mains connection",
+        "connected to water mains"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "automatic_water_level_control",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating automatic water level control.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "automatic water level control",
+        "water level automatically controlled"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "manual_water_fill",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating manual water fill.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "manual water fill"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_water_level_switch",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has water level switch.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has water level switch",
+        "water level switch"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_drain_pump",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has drain pump.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has drain pump",
+        "drain pump"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_external_water_hose",
+      "category": "water",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has external water hose.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has external water hose",
+        "external water hose"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_exposed_to_water",
+      "category": "moisture",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is exposed to water.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is exposed to water",
+        "exposed to water"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_subject_to_spillage",
+      "category": "moisture",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is subject to spillage.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "subject to spillage",
+        "liquid spillage"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_water_container",
+      "category": "moisture",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has water container.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "water container",
+        "liquid container"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_liquid_carrying_parts",
+      "category": "moisture",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has liquid carrying parts.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has liquid carrying parts",
+        "liquid carrying parts"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_moving_parts",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has moving parts.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has moving parts",
+        "moving parts"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_rotating_parts",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has rotating parts.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has rotating parts",
+        "rotating parts"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_door",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has door.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has door",
+        "door"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_lid",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has lid.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has lid",
+        "lid"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_door_interlock",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has door interlock.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "door interlock",
+        "door interlocking device"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_lid_interlock",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has lid interlock.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has lid interlock",
+        "lid interlock"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_removable_lid",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has removable lid.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "removable lid"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_sliding_lid",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has sliding lid.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "sliding lid"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_hinged_lid",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has hinged lid.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "hinged lid"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_guard",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has guard.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has guard",
+        "guard"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_adjustable_guard",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether an adjustable guard is present.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "adjustable guard"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_control_position_indicator",
+      "category": "controls",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether handles, knobs or similar parts are used to indicate control positions.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "handles knobs and the like",
+        "handles knobs or similar parts",
+        "control position indicator"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_enclosure",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has enclosure.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has enclosure",
+        "enclosure"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_braking_system",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has braking system.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has braking system",
+        "braking system"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_washing_function",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has washing function.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "washing function",
+        "washing machine"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "loading_type",
+      "category": "washing_function",
+      "data_type": "ENUM",
+      "description": "Canonical product feature indicating loading type.",
+      "allowed_values": [
+        "FRONT",
+        "TOP",
+        "OTHER"
+      ],
+      "unit": null,
+      "aliases": [
+        "loading type"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_front_loaded",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is front loaded.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is front loaded",
+        "front loaded"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_top_loaded",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is top loaded.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is top loaded",
+        "top loaded"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_rotating_drum",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has rotating drum.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has rotating drum",
+        "rotating drum",
+        "drum type"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_impeller",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has impeller.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has impeller",
+        "impeller"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_agitator",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has agitator.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has agitator",
+        "agitator"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_water_extraction_function",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has water extraction function.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "water extraction function",
+        "water extraction"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_spinning_function",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has spinning function.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "spinning function",
+        "spin function"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_separate_spin_container",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has separate spin container.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "separate spin container",
+        "spin container"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_drying_function",
+      "category": "washing_function",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has drying function.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "drying function",
+        "drying cycle"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "uses_detergent",
+      "category": "chemical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating uses detergent.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "uses detergent",
+        "detergent"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_detergent_dispenser",
+      "category": "chemical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has detergent dispenser.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has detergent dispenser",
+        "detergent dispenser"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "uses_electrolyte",
+      "category": "chemical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating uses electrolyte.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "uses electrolyte",
+        "electrolyte"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_electrolyser",
+      "category": "chemical",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has electrolyser.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has electrolyser",
+        "electrolyser"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_basic_insulation",
+      "category": "insulation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has basic insulation.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has basic insulation",
+        "basic insulation"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_supplementary_insulation",
+      "category": "insulation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has supplementary insulation.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has supplementary insulation",
+        "supplementary insulation"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_double_insulation",
+      "category": "insulation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has double insulation.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has double insulation",
+        "double insulation"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_reinforced_insulation",
+      "category": "insulation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has reinforced insulation.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has reinforced insulation",
+        "reinforced insulation"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_functional_insulation",
+      "category": "insulation",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has functional insulation.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has functional insulation",
+        "functional insulation"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_internal_wiring",
+      "category": "wiring_and_components",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has internal wiring.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has internal wiring",
+        "internal wiring"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_pcb",
+      "category": "wiring_and_components",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has pcb.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has pcb",
+        "pcb",
+        "printed circuit board",
+        "printed circuit boards"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_transformer",
+      "category": "wiring_and_components",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has transformer.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "transformer",
+        "transformers"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_capacitor",
+      "category": "wiring_and_components",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has capacitor.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has capacitor",
+        "capacitor"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_connector",
+      "category": "wiring_and_components",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating has connector.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "has connector",
+        "connector"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_indoor_use",
+      "category": "environment",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is indoor use.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is indoor use",
+        "indoor use"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_outdoor_use",
+      "category": "environment",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is outdoor use.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is outdoor use",
+        "outdoor use"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_vehicle_use",
+      "category": "environment",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is vehicle use.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is vehicle use",
+        "vehicle use"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_ship_use",
+      "category": "environment",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is ship use.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is ship use",
+        "ship use"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_aircraft_use",
+      "category": "environment",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is aircraft use.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is aircraft use",
+        "aircraft use"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_corrosive_environment",
+      "category": "environment",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is corrosive environment.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is corrosive environment",
+        "corrosive environment"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "is_explosive_environment",
+      "category": "environment",
+      "data_type": "BOOLEAN",
+      "description": "Canonical product feature indicating is explosive environment.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "is explosive environment",
+        "explosive environment"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "rated_value_configuration",
+      "category": "electrical",
+      "data_type": "ENUM",
+      "description": "Describes whether the appliance has a single rated value, operates continuously throughout a rated range, or requires selection/adjustment between discrete rated values.",
+      "allowed_values": [
+        "SINGLE",
+        "CONTINUOUS_RANGE",
+        "SELECTABLE_VALUES",
+        "OTHER",
+        "UNKNOWN"
+      ],
+      "unit": null,
+      "aliases": [
+        "rated value configuration",
+        "range of rated values",
+        "different rated values",
+        "selectable rated values"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "uses_standard_symbols",
+      "category": "marking",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether standardized symbols are used for product markings or indications.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "standard symbols",
+        "standardized symbols",
+        "symbols are used"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "uses_numeric_control_position_markings",
+      "category": "marking",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether figures/numbers are used to identify different control or switch positions.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "numeric control position markings",
+        "numeric position markings",
+        "figures used for indicating different positions",
+        "figures are used for indicating the different positions"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "requires_user_maintenance_precautions",
+      "category": "instruction",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether specific precautions are required during user maintenance.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "user maintenance precautions",
+        "precautions during user maintenance"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "requires_installation_precautions",
+      "category": "instruction",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether specific precautions are required during installation.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "installation precautions",
+        "precautions during installation"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_protective_impedance",
+      "category": "insulation",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether protective impedance is used as part of the protection against electric shock.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "protective impedance",
+        "protective impedance is used"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_tool_free_accessible_compartment",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether the appliance contains a compartment that can be accessed without the use of a tool.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "tool free accessible compartment",
+        "compartment accessible without a tool",
+        "compartments to which access can be gained without the aid of a tool"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "pollution_degree",
+      "category": "environment",
+      "data_type": "ENUM",
+      "description": "IEC pollution-degree classification applicable to the product or relevant insulation environment.",
+      "allowed_values": [
+        "POLLUTION_DEGREE_1",
+        "POLLUTION_DEGREE_2",
+        "POLLUTION_DEGREE_3",
+        "POLLUTION_DEGREE_4",
+        "UNKNOWN"
+      ],
+      "unit": null,
+      "aliases": [
+        "pollution degree",
+        "pollution degree 1",
+        "pollution degree 2",
+        "pollution degree 3",
+        "pollution degree 4"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "requires_attended_operation",
+      "category": "intended_operation",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether the appliance is intended or required to operate while attended.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "attended operation",
+        "operated while attended"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_base_ventilation_openings",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether ventilation openings are provided in the base of the appliance.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "base ventilation openings",
+        "ventilation openings in the base",
+        "ventilation openings provided in the base"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "has_openable_filter_compartment",
+      "category": "mechanical",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether the product has a filter compartment that can be opened.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "openable filter compartment",
+        "filter compartment can be opened"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": null
+    },
+    {
+      "key": "maximum_operating_depth",
+      "category": "operating_context",
+      "data_type": "MEASUREMENT",
+      "description": "Maximum operating depth explicitly declared for the product.",
+      "allowed_values": [],
+      "unit": "m",
+      "aliases": [
+        "maximum operating depth",
+        "max operating depth",
+        "maximum immersion depth",
+        "maximum submersion depth"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": "Generic operating-context measurement; it must not be inferred from product type."
+    },
+    {
+      "key": "has_protective_extra_low_voltage_circuit",
+      "category": "electrical_construction",
+      "data_type": "BOOLEAN",
+      "description": "Indicates whether protective extra-low-voltage circuitry is present in the product or equipment.",
+      "allowed_values": [],
+      "unit": null,
+      "aliases": [
+        "protective extra low voltage circuit",
+        "PELV circuit"
+      ],
+      "applicability_relevant": true,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": "Reusable electrical-construction feature; absence requires explicit report evidence."
+    },
+    {
+      "key": "no_load_speed",
+      "category": "performance",
+      "data_type": "MEASUREMENT",
+      "description": "Declared no-load rotational or operating speed.",
+      "allowed_values": [],
+      "unit": "min-1",
+      "aliases": ["no-load speed", "speed n0"],
+      "applicability_relevant": false,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": "Source observation only; no compliance conclusion is implied."
+    },
+    {
+      "key": "tool_capacity",
+      "category": "dimension",
+      "data_type": "MEASUREMENT",
+      "description": "Declared product or accessory capacity dimension.",
+      "allowed_values": [],
+      "unit": "mm",
+      "aliases": ["capacity", "chuck capacity"],
+      "applicability_relevant": false,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": "Generic capacity measurement."
+    },
+    {
+      "key": "sound_pressure_level",
+      "category": "emission",
+      "data_type": "MEASUREMENT",
+      "description": "Reported sound pressure level.",
+      "allowed_values": [],
+      "unit": "dB",
+      "aliases": ["noise pressure level", "LpA"],
+      "applicability_relevant": false,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": "Source observation only."
+    },
+    {
+      "key": "vibration_magnitude",
+      "category": "emission",
+      "data_type": "MEASUREMENT",
+      "description": "Reported vibration magnitude.",
+      "allowed_values": [],
+      "unit": "m/s2",
+      "aliases": ["vibration emission value", "ah"],
+      "applicability_relevant": false,
+      "report_extractable": true,
+      "default_value": null,
+      "notes": "Source observation only."
+    }
+  ]
+}

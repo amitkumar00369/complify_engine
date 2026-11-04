@@ -1,0 +1,4 @@
+"""Explicit generic targets accepted by visual canonical promotion."""
+class GenericVisualCanonicalTargetRegistry:
+ TARGETS={"rated_voltage":{"target":"product_fact.rated_voltage","units":{"V"},"role_required":True},"rated_frequency":{"target":"product_fact.rated_frequency","units":{"HZ"},"role_required":True},"rated_power_input":{"target":"product_fact.rated_power_input","units":{"W"},"role_required":True},"rated_current":{"target":"product_fact.rated_current","units":{"A"},"role_required":True},"ip_rating":{"target":"product_fact.ip_rating","units":{None},"role_required":False},"protection_class":{"target":"product_fact.protection_class","units":{None},"role_required":False},"model_identifier":{"target":"product_identity.model_identifier","units":{None},"role_required":False}}
+ def resolve(self,candidate_type):return self.TARGETS.get(candidate_type)

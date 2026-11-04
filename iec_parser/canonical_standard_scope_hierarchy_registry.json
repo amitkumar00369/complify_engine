@@ -1,0 +1,11 @@
+{
+  "schema_version": "CANONICAL_STANDARD_SCOPE_HIERARCHY_REGISTRY_V1",
+  "policy_version": "STEP51B_STANDARD_SCOPE_HIERARCHY_V1",
+  "families": [
+    {"standard_family": "IEC 60065", "standard_domain": "AUDIO_VIDEO_APPARATUS", "authority": "CANONICAL_STANDARD_FAMILY_METADATA"},
+    {"standard_family": "IEC 60204-1", "standard_domain": "MACHINE", "authority": "CANONICAL_STANDARD_FAMILY_METADATA"},
+    {"standard_family": "IEC 60335-1", "standard_domain": "APPLIANCE", "authority": "CANONICAL_STANDARD_FAMILY_METADATA"},
+    {"standard_family": "IEC 61427-1", "standard_domain": "BATTERY", "authority": "CANONICAL_STANDARD_FAMILY_METADATA"},
+    {"standard_family": "IEC 62841-1", "standard_domain": "POWER_TOOL", "authority": "CANONICAL_STANDARD_FAMILY_METADATA"}
+  ]
+}

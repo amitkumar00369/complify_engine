@@ -1,0 +1,27 @@
+{
+  "schema_version": "KB_MATURITY_AUTHORIZATION_POLICY_V1",
+  "policy_id": "GENERIC_KB_MATURITY_AUTHORIZATION_POLICY_V1",
+  "purposes": {
+    "AUTHORITATIVE_COMPLIANCE_EVALUATION": {
+      "authorized_maturity_states": ["PRODUCTION"],
+      "required_metadata": ["review_scope", "reviewer", "review_date", "version"],
+      "unknown_or_missing_state": "NOT_DETERMINABLE"
+    },
+    "PARSER_TESTING": {
+      "authorized_maturity_states": ["DRAFT", "REVIEWED", "PRODUCTION"],
+      "required_metadata": []
+    },
+    "DEVELOPMENT": {
+      "authorized_maturity_states": ["DRAFT", "REVIEWED", "PRODUCTION"],
+      "required_metadata": []
+    },
+    "BENCHMARKING": {
+      "authorized_maturity_states": ["DRAFT", "REVIEWED", "PRODUCTION"],
+      "required_metadata": []
+    },
+    "REVIEW": {
+      "authorized_maturity_states": ["REVIEWED", "PRODUCTION"],
+      "required_metadata": []
+    }
+  }
+}

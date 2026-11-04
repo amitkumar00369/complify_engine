@@ -1,0 +1,8 @@
+{
+  "description": "Explicitly validated report-edition to effective-KB-edition authority mappings. Step 49-B creates the contract but invents no mappings.",
+  "mappings": [],
+  "policy_version": "STEP49B_VALIDATED_STANDARD_MAPPING_POLICY_V1",
+  "registry_id": "COMPLIFY_VALIDATED_STANDARD_MAPPING_REGISTRY",
+  "registry_version": "1.0.0",
+  "schema_version": "VALIDATED_STANDARD_MAPPING_REGISTRY_V1"
+}

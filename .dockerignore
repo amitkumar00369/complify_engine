@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+.git
+storage/
+test_reports/output/
+RawData/
+backup_before_generic_update/
+testenv/
+gap_analysis/
